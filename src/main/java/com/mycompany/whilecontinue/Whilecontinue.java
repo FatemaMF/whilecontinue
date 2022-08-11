@@ -11,9 +11,20 @@ package com.mycompany.whilecontinue;
  */
 public class Whilecontinue {
 
+    void demoSum(int a,int b)
+    {
+        System.out.println("sum = " +(a+b/10));
+    }
+    int summation()
+    {
+    int x=4, y=5;
+    return (x+y);
+    }
+    
+    
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        int x=0;
+       
         int count = 20;
 		// While loop for iteration
 		while (count >= 0) {
@@ -24,6 +35,7 @@ public class Whilecontinue {
 				// skipping when count==7 or count==15
 				continue;
 			}
+                        if (count ==5) break;
 			// Printing values after continue statement
 			System.out.print(count + " ");
 
@@ -31,5 +43,9 @@ public class Whilecontinue {
 			count--;
 		}
                 System.out.println("the end");
+                
+             Whilecontinue sum =  new Whilecontinue();
+             sum.demoSum(3,4);
+             System.out.println( "summation of two numbers is:  " +sum.summation());
     }
 }
